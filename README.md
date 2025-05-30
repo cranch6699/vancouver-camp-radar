@@ -1,20 +1,40 @@
+# Vancouver Camp Radar
+
+**Find the perfect summer camp for your child in Vancouver — powered by Laravel and GPT.**
+
+This is a lightweight Laravel 11-based MVP that helps parents discover local summer camps tailored to their child’s age, interests, location, and budget.
+
 ---
-title: Laravel
-description: A Laravel app that connects to a PostgreSQL database
-tags:
-  - php
-  - laravel
-  - postgresql
+
+## Features
+
+- Simple form for child age, location, interest, and budget
+- GPT-powered camp recommendations via OpenAI
+- Built with Laravel 11, Vite, and Tailwind CSS
+- PostgreSQL via Railway integration
+- Modular GPT integration via Laravel service class
+
 ---
 
-# Laravel Starter Example
+## Tech Stack
 
-This is a [Laravel](https://laravel.com/) starter app that connects to a Railway Postgres database.
+- **Backend:** Laravel 11 (PHP 8.2+)
+- **Frontend:** Blade, Tailwind CSS, Vite
+- **AI:** OpenAI GPT-4 (via API)
+- **Database:** PostgreSQL (Railway or local)
+- **Hosting:** Railway (auto-deploy via GitHub)
+- **Dev Tools:** Composer, NPM, Laravel Sail, GitHub Codespaces
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/fWEWWf)
+---
 
-## ✨ Features
+## 🧑‍💻 Local Development
 
-- PHP
-- Laravel
-- Postgres
+### 1. Clone & Install
+
+```bash
+git clone https://github.com/cranch6699/vancouver-camp-radar.git
+cd vancouver-camp-radar
+composer install
+npm install
+cp .env.example .env
+php artisan key:generate
